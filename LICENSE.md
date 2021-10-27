@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2021 Jed Estep
+renpy-blend-modes Copyright (c) 2021 Jed Estep
 
 GLSL blend functions copyright (c) 2015 Jamie Owen via [github/jamieowen/glsl-blend](https://github.com/jamieowen/glsl-blend)
 

@@ -3,12 +3,20 @@ init python:
   """
   Soft Light shader
 
-  This shader implements the soft light blend mode. It allows you to use any RGBA colour as a lighting source for the transformed image. The RGB component controls the colour of the lighting, and the A component controls the intensity of the lighting. With an A value of 0, the colour of the base image will be unchanged.
-  This implementation uses the Photoshop soft light algorithm. Since it is not possible to supply anything other than a solid color as the overlay image, you will not be able to observe the discontinuity at b=0.5.
+  This shader implements the soft light blend mode. It allows you to use any RGBA colour
+  as a lighting source for the transformed image. The RGB component controls the colour
+  of the lighting, and the A component controls the intensity of the lighting. With an
+  A value of 0, the colour of the base image will be unchanged.
+
+  This implementation uses the Photoshop soft light algorithm. Since it is not possible
+  to supply anything other than a solid color as the overlay image, you will not be able
+  to observe the discontinuity at b=0.5.
 
   USAGE:
     Args:
-      u_light_color: the colour of the light. This is a 4-tuple of floats between 0 and 1 representing the RGBA values. If you are using colour values in the 0-255 spectrum, divide them by 255.
+      u_light_color: the colour of the light. This is a 4-tuple of floats between 0 and 1
+        representing the RGBA values. If you are using colour values in the 0-255
+        spectrum, divide them by 255.
   """
 
 

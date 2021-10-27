@@ -6,6 +6,8 @@ This library adapts Jamie Owen's [glsl-blend library](https://github.com/jamieow
 ## Installation
 This project consists of a series of .rpy files. This means the best way to include it into your Ren'Py project is to download the files and place them into your `game` directory. You do not need to include the files for any shaders you don't plan to use, however you must include `base.rpy`.
 
+To download an archive of this project, click the green Code button on GitHub and select "Download ZIP".
+
 ## Usage
 Each shader file specifies a list of arguments necessary to use the shader in a transform. Read the `USAGE` section of the comment at the top of a shader file to see what arguments need to be passed.
 

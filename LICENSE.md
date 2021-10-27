@@ -1,6 +1,8 @@
-MIT License
+# MIT License
 
-Copyright (c) 2021 CrossCouloir
+Copyright (c) 2021 Jed Estep
+
+GLSL blend functions copyright (c) 2015 Jamie Owen via [github/jamieowen/glsl-blend](https://github.com/jamieowen/glsl-blend)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -9,7 +9,7 @@ uniform sampler2D tex0;
 attribute vec2 a_tex_coord;
 varying vec2 v_tex_coord;
 
-uniform tex1 sampler2D;
+uniform sampler2D tex1;
 """
   _soft_light_blend_mode.fragment_functions = """
 float blendSoftLight(float base, float blend) {
@@ -29,7 +29,7 @@ v_tex_coord = a_tex_coord;
 """
   _soft_light_blend_mode.fragment_shader = """
 vec4 bgcolor = texture2D(tex0, v_tex_coord.st, u_lod_bias);
-vec4 maskcolor = texture2D(tex1, v_tex_coord.st, u_lod_bias)
+vec4 maskcolor = texture2D(tex1, v_tex_coord.st, u_lod_bias);
 vec3 blended = blendSoftLight(bgcolor.xyz, maskcolor.xyz, maskcolor.w);
 gl_FragColor = vec4(blended, bgcolor.w);
 """

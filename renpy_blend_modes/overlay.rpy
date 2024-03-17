@@ -30,7 +30,7 @@ v_tex_coord = a_tex_coord;
     _overlay_blend_mode.fragment_shader = """
 vec4 bgcolor = texture2D(tex0, v_tex_coord.st, u_lod_bias);
 vec4 maskcolor = texture2D(tex1, v_tex_coord.st, u_lod_bias)
-vec3 blended = blendScreen(bgcolor.xyz, maskcolor.xyz, maskcolor.w);
+vec3 blended = blendOverlay(bgcolor.xyz, maskcolor.xyz, maskcolor.w);
 gl_FragColor = vec4(blended, bgcolor.w);
 """
     _overlay_blend_mode.register()

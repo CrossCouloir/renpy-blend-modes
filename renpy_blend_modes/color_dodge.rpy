@@ -1,5 +1,5 @@
 init python:
-    CC_COLOR_BURN_NAME = "crosscouloir.color_dodge"
+    CC_COLOR_DODGE_NAME = "crosscouloir.color_dodge"
 
     _color_dodge_blend_mode = BlendMode(CC_COLOR_DODGE_NAME)
 
